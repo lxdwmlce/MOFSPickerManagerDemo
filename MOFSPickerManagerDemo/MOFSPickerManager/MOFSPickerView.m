@@ -81,7 +81,7 @@
 
 #pragma mark - Action
 
-- (void)showMOFSPickerViewWithDataArray:(NSArray *)array commitBlock:(void(^)(NSString *string))commitBlock cancelBlock:(void(^)(void))cancelBlock {
+- (void)showMOFSPickerViewWithDataArray:(NSArray *)array commitBlock:(void(^)(NSString *string ,NSInteger row))commitBlock cancelBlock:(void(^)(void))cancelBlock {
     self.dataArr = [NSMutableArray arrayWithArray:array];
     [self reloadAllComponents];
     self.selectedRow = 0;
@@ -106,7 +106,7 @@
         if (commitBlock) {
             NSString *rowStr = [NSString stringWithFormat:@"%ld",(long)weakSelf.selectedRow];
             [weakSelf.recordDic setValue:rowStr forKey:tagStr];
-            commitBlock(weakSelf.dataArr[weakSelf.selectedRow]);
+            commitBlock(weakSelf.dataArr[weakSelf.selectedRow],weakSelf.selectedRow);
         }
     };
 }
