@@ -38,7 +38,7 @@
             
         }];
     } else if (lb.tag == 2) {
-        [[MOFSPickerManager shareManger] showPickerViewWithDataArray:@[@"疾风剑豪",@"刀锋意志",@"诡术妖姬",@"狂战士"] tag:1 title:nil cancelTitle:@"取消" commitTitle:@"确定" commitBlock:^(NSString *string) {
+        [[MOFSPickerManager shareManger] showPickerViewWithDataArray:@[@"疾风剑豪",@"刀锋意志",@"诡术妖姬",@"狂战士"] tag:1 title:nil cancelTitle:@"取消" commitTitle:@"确定" commitBlock:^(NSString *string,NSInteger row) {
             lb.text = string;
         } cancelBlock:^{
             

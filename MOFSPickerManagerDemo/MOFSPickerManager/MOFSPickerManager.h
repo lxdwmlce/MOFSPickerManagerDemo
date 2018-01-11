@@ -14,7 +14,7 @@
 typedef void (^DatePickerCommitBlock)(NSDate *date);
 typedef void (^DatePickerCancelBlock)(void);
 
-typedef void (^PickerViewCommitBlock)(NSString *string);
+typedef void (^PickerViewCommitBlock)(NSString *string,NSInteger row);
 typedef void (^PickerViewCancelBlock)(void);
 
 @interface MOFSPickerManager : NSObject
