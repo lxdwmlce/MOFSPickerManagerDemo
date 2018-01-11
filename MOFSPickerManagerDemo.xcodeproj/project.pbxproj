@@ -265,7 +265,7 @@
 				TargetAttributes = {
 					BFE28A911D7D9B7400C87B7D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = P266DRY53J;
+						DevelopmentTeam = 58XJB9EFP9;
 						ProvisioningStyle = Automatic;
 					};
 					BFE28AAA1D7D9B7400C87B7D = {
@@ -501,7 +501,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P266DRY53J;
+				DEVELOPMENT_TEAM = 58XJB9EFP9;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MOFSPickerManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -521,7 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P266DRY53J;
+				DEVELOPMENT_TEAM = 58XJB9EFP9;
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = MOFSPickerManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -423,6 +423,30 @@
             break;
     }
 }
+- (UIView *)pickerView:(UIPickerView *)pickerView
+            viewForRow:(NSInteger)row forComponent:(NSInteger)component
+           reusingView:(UIView *)view{
+    
+    UILabel* pickerLabel = (UILabel*)view;
+    
+    if (!pickerLabel){
+        pickerLabel = [[UILabel alloc] init];
+        pickerLabel.textColor = [UIColor colorWithRed:51.0/255
+                                                green:51.0/255
+                                                 blue:51.0/255
+                                                alpha:1.0];
+        pickerLabel.adjustsFontSizeToFitWidth = YES;
+        [pickerLabel setTextAlignment:NSTextAlignmentCenter];
+        [pickerLabel setBackgroundColor:[UIColor clearColor]];
+        [pickerLabel setFont:[UIFont boldSystemFontOfSize:15]];
+    }
+    
+    pickerLabel.text = [self pickerView:pickerView
+                            titleForRow:row
+                           forComponent:component];
+    return pickerLabel;
+}
+
 
 - (void)dealloc {
    
